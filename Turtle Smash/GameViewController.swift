@@ -7,63 +7,56 @@
 //
 
 import UIKit
-import SpriteKit
-
-extension SKNode {
-    class func unarchiveFromFile(file : NSString) -> SKNode? {
-        if let path = NSBundle.mainBundle().pathForResource(file, ofType: "sks") {
-            var sceneData = NSData(contentsOfFile: path, options: .DataReadingMappedIfSafe, error: nil)!
-            var archiver = NSKeyedUnarchiver(forReadingWithData: sceneData)
-            
-            archiver.setClass(self.classForKeyedUnarchiver(), forClassName: "SKScene")
-            let scene = archiver.decodeObjectForKey(NSKeyedArchiveRootObjectKey) as GameScene
-            archiver.finishDecoding()
-            return scene
-        } else {
-            return nil
-        }
-    }
-}
 
 class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if let scene = GameScene.unarchiveFromFile("GameScene") as? GameScene {
-            // Configure the view.
-            let skView = self.view as SKView
-            skView.showsFPS = true
-            skView.showsNodeCount = true
-            
-            /* Sprite Kit applies additional optimizations to improve rendering performance */
-            skView.ignoresSiblingOrder = true
-            
-            /* Set the scale mode to scale to fit the window */
-            scene.scaleMode = .AspectFill
-            
-            skView.presentScene(scene)
+        
+        let thisView = self.view as GameView
+        let game = GameManager.newGame(thisView)
+        game.onOver({
+            delay(0.35) {
+                self.performSegueWithIdentifier("showScore", sender: self)
+            }
+        })
+        
+        if SettingsManager.get("alreadyShowedHelper") == nil {
+            delay(0.5) {
+                self.showHelper()
+            }
         }
-    }
-
-    override func shouldAutorotate() -> Bool {
-        return true
-    }
-
-    override func supportedInterfaceOrientations() -> Int {
-        if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
-            return Int(UIInterfaceOrientationMask.AllButUpsideDown.rawValue)
-        } else {
-            return Int(UIInterfaceOrientationMask.All.rawValue)
-        }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Release any cached data, images, etc that aren't in use.
     }
 
     override func prefersStatusBarHidden() -> Bool {
         return true
+    }
+    
+    func hideHelper(gotItButton: UIButton) {
+        UIView.animateWithDuration(0.35, animations: {
+            gotItButton.superview!.frame = CGRectMake(self.view.frame.width, 0, self.view.frame.width, self.view.frame.height)
+        },
+        completion: {
+            (isFinished: Bool) in
+            gotItButton.superview!.removeFromSuperview()
+            SettingsManager.set("alreadyShowedHelper", value: true)
+            GameManager.currentGame!.start()
+        })
+    }
+    
+    func showHelper() {
+        let myView = NSBundle.mainBundle().loadNibNamed("HelpScreen", owner: nil, options: nil)[0] as UIView
+        myView.frame = CGRectMake(self.view.frame.width, 0, self.view.frame.width, self.view.frame.height)
+        
+        self.view.addSubview(myView)
+        
+        // Slide in the subview into view from right to left
+        UIView.animateWithDuration(0.35, animations: { () -> Void in
+            myView.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.height)
+        })
+        
+        if let gotItButton = myView.viewWithTag(1) {
+            (gotItButton as UIButton).addTarget(self, action: "hideHelper:", forControlEvents: UIControlEvents.TouchUpInside)
+        }
     }
 }

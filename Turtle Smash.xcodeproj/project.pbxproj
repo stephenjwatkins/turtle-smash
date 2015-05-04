@@ -7,14 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6226F101A79D25A00F72961 /* turtle-head-smashed.png in Resources */ = {isa = PBXBuildFile; fileRef = D6226F0F1A79D25A00F72961 /* turtle-head-smashed.png */; };
+		D6226F131A79D61000F72961 /* turtle-head-concerned.png in Resources */ = {isa = PBXBuildFile; fileRef = D6226F111A79D61000F72961 /* turtle-head-concerned.png */; };
+		D6226F141A79D61000F72961 /* turtle-head-happy.png in Resources */ = {isa = PBXBuildFile; fileRef = D6226F121A79D61000F72961 /* turtle-head-happy.png */; };
+		D6734DB91A71ECD300D3FA2C /* Smasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6734DB81A71ECD300D3FA2C /* Smasher.swift */; };
+		D6734DBB1A73F31C00D3FA2C /* SmashersGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6734DBA1A73F31C00D3FA2C /* SmashersGrid.swift */; };
+		D6734E5E1A7445D000D3FA2C /* turtle-head.png in Resources */ = {isa = PBXBuildFile; fileRef = D6734E5D1A7445D000D3FA2C /* turtle-head.png */; };
+		D6734E601A744BC600D3FA2C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6734E5F1A744BC600D3FA2C /* Extensions.swift */; };
+		D6734E631A7450EE00D3FA2C /* SmasherOuterCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6734E621A7450EE00D3FA2C /* SmasherOuterCircle.swift */; };
+		D6734E651A7450F500D3FA2C /* SmasherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6734E641A7450F500D3FA2C /* SmasherProtocol.swift */; };
+		D6734E671A7450FF00D3FA2C /* SmasherInnerCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6734E661A7450FF00D3FA2C /* SmasherInnerCircle.swift */; };
+		D6734E691A74510E00D3FA2C /* SmasherTurtleHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6734E681A74510E00D3FA2C /* SmasherTurtleHead.swift */; };
 		D6970E8C1A5B636600F54865 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6970E8B1A5B636600F54865 /* AppDelegate.swift */; };
-		D6970E8E1A5B636700F54865 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D6970E8D1A5B636700F54865 /* GameScene.sks */; };
-		D6970E901A5B636700F54865 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6970E8F1A5B636700F54865 /* GameScene.swift */; };
+		D6970E901A5B636700F54865 /* SmashersScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6970E8F1A5B636700F54865 /* SmashersScene.swift */; };
 		D6970E921A5B636700F54865 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6970E911A5B636700F54865 /* GameViewController.swift */; };
 		D6970E951A5B636700F54865 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6970E931A5B636700F54865 /* Main.storyboard */; };
 		D6970E971A5B636700F54865 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6970E961A5B636700F54865 /* Images.xcassets */; };
 		D6970E9A1A5B636700F54865 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6970E981A5B636700F54865 /* LaunchScreen.xib */; };
 		D6970EA61A5B636700F54865 /* Turtle_SmashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6970EA51A5B636700F54865 /* Turtle_SmashTests.swift */; };
+		D6970EBA1A5B756200F54865 /* HVD_Poster_Clean.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6970EB91A5B756200F54865 /* HVD_Poster_Clean.ttf */; };
+		D6970EC01A5B7BB000F54865 /* button-bg.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D6970EBF1A5B7BB000F54865 /* button-bg.tiff */; };
+		D6970EC21A5B7C8E00F54865 /* turtle.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D6970EC11A5B7C8E00F54865 /* turtle.tiff */; };
+		D6970EC41A5B815700F54865 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6970EC31A5B815700F54865 /* PlayViewController.swift */; };
+		D6970EC61A5B87F600F54865 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6970EC51A5B87F600F54865 /* Utility.swift */; };
+		D6970EC81A5B8DA900F54865 /* HelpScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6970EC71A5B8DA900F54865 /* HelpScreen.xib */; };
+		D6B2454D1A70A08200775C04 /* turtle-smash-logo.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D6B2454C1A70A08200775C04 /* turtle-smash-logo.tiff */; };
+		D6B2454F1A70A30900775C04 /* ScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2454E1A70A30900775C04 /* ScoreManager.swift */; };
+		D6B245511A70A3E100775C04 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B245501A70A3E100775C04 /* GameManager.swift */; };
+		D6B245531A70A43B00775C04 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B245521A70A43B00775C04 /* Game.swift */; };
+		D6B245551A70A53C00775C04 /* ScoreLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B245541A70A53C00775C04 /* ScoreLabel.swift */; };
+		D6B245571A70A5DE00775C04 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B245561A70A5DE00775C04 /* Config.swift */; };
+		D6BAA4251A6F451B0002BC21 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BAA4241A6F451B0002BC21 /* SettingsManager.swift */; };
+		D6D689E91A71D72200BB8062 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D689E81A71D72200BB8062 /* GameView.swift */; };
+		D6D689F01A71E0B200BB8062 /* SmashersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D689EF1A71E0B200BB8062 /* SmashersView.swift */; };
+		D6D689F21A71E55D00BB8062 /* SmashersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D689F11A71E55D00BB8062 /* SmashersViewController.swift */; };
+		D6E2EF0C1A745DBF008B9F9D /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E2EF0B1A745DBE008B9F9D /* Round.swift */; };
+		D6E2EF0E1A7489A8008B9F9D /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E2EF0D1A7489A8008B9F9D /* ScoreViewController.swift */; };
+		D6E2EF101A7489EC008B9F9D /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E2EF0F1A7489EC008B9F9D /* ScoreView.swift */; };
+		D6E2EF1A1A757D8D008B9F9D /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E2EF191A757D8D008B9F9D /* ProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,11 +58,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D6226F0F1A79D25A00F72961 /* turtle-head-smashed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "turtle-head-smashed.png"; sourceTree = "<group>"; };
+		D6226F111A79D61000F72961 /* turtle-head-concerned.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "turtle-head-concerned.png"; sourceTree = "<group>"; };
+		D6226F121A79D61000F72961 /* turtle-head-happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "turtle-head-happy.png"; sourceTree = "<group>"; };
+		D6734DB81A71ECD300D3FA2C /* Smasher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Smasher.swift; sourceTree = "<group>"; };
+		D6734DBA1A73F31C00D3FA2C /* SmashersGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmashersGrid.swift; sourceTree = "<group>"; };
+		D6734E5D1A7445D000D3FA2C /* turtle-head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "turtle-head.png"; sourceTree = "<group>"; };
+		D6734E5F1A744BC600D3FA2C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D6734E621A7450EE00D3FA2C /* SmasherOuterCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmasherOuterCircle.swift; sourceTree = "<group>"; };
+		D6734E641A7450F500D3FA2C /* SmasherProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmasherProtocol.swift; sourceTree = "<group>"; };
+		D6734E661A7450FF00D3FA2C /* SmasherInnerCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmasherInnerCircle.swift; sourceTree = "<group>"; };
+		D6734E681A74510E00D3FA2C /* SmasherTurtleHead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmasherTurtleHead.swift; sourceTree = "<group>"; };
 		D6970E861A5B636600F54865 /* Turtle Smash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Turtle Smash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6970E8A1A5B636600F54865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6970E8A1A5B636600F54865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Turtle Smash/Info.plist"; sourceTree = SOURCE_ROOT; };
 		D6970E8B1A5B636600F54865 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D6970E8D1A5B636700F54865 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		D6970E8F1A5B636700F54865 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		D6970E8F1A5B636700F54865 /* SmashersScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmashersScene.swift; sourceTree = "<group>"; };
 		D6970E911A5B636700F54865 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		D6970E941A5B636700F54865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6970E961A5B636700F54865 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -40,6 +80,26 @@
 		D6970E9F1A5B636700F54865 /* Turtle SmashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Turtle SmashTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6970EA41A5B636700F54865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6970EA51A5B636700F54865 /* Turtle_SmashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turtle_SmashTests.swift; sourceTree = "<group>"; };
+		D6970EB91A5B756200F54865 /* HVD_Poster_Clean.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HVD_Poster_Clean.ttf; sourceTree = "<group>"; };
+		D6970EBF1A5B7BB000F54865 /* button-bg.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = "button-bg.tiff"; path = "../button-bg.tiff"; sourceTree = "<group>"; };
+		D6970EC11A5B7C8E00F54865 /* turtle.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = turtle.tiff; path = ../turtle.tiff; sourceTree = "<group>"; };
+		D6970EC31A5B815700F54865 /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		D6970EC51A5B87F600F54865 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		D6970EC71A5B8DA900F54865 /* HelpScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpScreen.xib; sourceTree = "<group>"; };
+		D6B2454C1A70A08200775C04 /* turtle-smash-logo.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "turtle-smash-logo.tiff"; sourceTree = "<group>"; };
+		D6B2454E1A70A30900775C04 /* ScoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreManager.swift; sourceTree = "<group>"; };
+		D6B245501A70A3E100775C04 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		D6B245521A70A43B00775C04 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		D6B245541A70A53C00775C04 /* ScoreLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreLabel.swift; sourceTree = "<group>"; };
+		D6B245561A70A5DE00775C04 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		D6BAA4241A6F451B0002BC21 /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		D6D689E81A71D72200BB8062 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		D6D689EF1A71E0B200BB8062 /* SmashersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmashersView.swift; sourceTree = "<group>"; };
+		D6D689F11A71E55D00BB8062 /* SmashersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmashersViewController.swift; sourceTree = "<group>"; };
+		D6E2EF0B1A745DBE008B9F9D /* Round.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
+		D6E2EF0D1A7489A8008B9F9D /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		D6E2EF0F1A7489EC008B9F9D /* ScoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		D6E2EF191A757D8D008B9F9D /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +120,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D6734E611A7450DE00D3FA2C /* Smasher */ = {
+			isa = PBXGroup;
+			children = (
+				D6734DB81A71ECD300D3FA2C /* Smasher.swift */,
+				D6734E621A7450EE00D3FA2C /* SmasherOuterCircle.swift */,
+				D6734E641A7450F500D3FA2C /* SmasherProtocol.swift */,
+				D6734E661A7450FF00D3FA2C /* SmasherInnerCircle.swift */,
+				D6734E681A74510E00D3FA2C /* SmasherTurtleHead.swift */,
+			);
+			name = Smasher;
+			sourceTree = "<group>";
+		};
 		D6970E7D1A5B636600F54865 = {
 			isa = PBXGroup;
 			children = (
@@ -81,14 +153,17 @@
 		D6970E881A5B636600F54865 /* Turtle Smash */ = {
 			isa = PBXGroup;
 			children = (
-				D6970E8B1A5B636600F54865 /* AppDelegate.swift */,
-				D6970E8D1A5B636700F54865 /* GameScene.sks */,
-				D6970E8F1A5B636700F54865 /* GameScene.swift */,
-				D6970E911A5B636700F54865 /* GameViewController.swift */,
-				D6970E931A5B636700F54865 /* Main.storyboard */,
+				D6734E611A7450DE00D3FA2C /* Smasher */,
+				D6E2EF141A748CE1008B9F9D /* Smashers */,
+				D6E2EF131A748C96008B9F9D /* Score */,
+				D6E2EF121A748C91008B9F9D /* Play */,
+				D6E2EF111A748C7C008B9F9D /* Game */,
+				D6D689ED1A71DCE400BB8062 /* Common */,
 				D6970E961A5B636700F54865 /* Images.xcassets */,
-				D6970E981A5B636700F54865 /* LaunchScreen.xib */,
 				D6970E891A5B636600F54865 /* Supporting Files */,
+				D6D689EE1A71DD0D00BB8062 /* Views */,
+				D6970E8B1A5B636600F54865 /* AppDelegate.swift */,
+				D6970E931A5B636700F54865 /* Main.storyboard */,
 			);
 			path = "Turtle Smash";
 			sourceTree = "<group>";
@@ -96,6 +171,14 @@
 		D6970E891A5B636600F54865 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D6226F111A79D61000F72961 /* turtle-head-concerned.png */,
+				D6226F121A79D61000F72961 /* turtle-head-happy.png */,
+				D6226F0F1A79D25A00F72961 /* turtle-head-smashed.png */,
+				D6734E5D1A7445D000D3FA2C /* turtle-head.png */,
+				D6B2454C1A70A08200775C04 /* turtle-smash-logo.tiff */,
+				D6970EBF1A5B7BB000F54865 /* button-bg.tiff */,
+				D6970EC11A5B7C8E00F54865 /* turtle.tiff */,
+				D6970EB91A5B756200F54865 /* HVD_Poster_Clean.ttf */,
 				D6970E8A1A5B636600F54865 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -116,6 +199,69 @@
 				D6970EA41A5B636700F54865 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6D689ED1A71DCE400BB8062 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D6BAA4241A6F451B0002BC21 /* SettingsManager.swift */,
+				D6970EC51A5B87F600F54865 /* Utility.swift */,
+				D6B245561A70A5DE00775C04 /* Config.swift */,
+				D6734E5F1A744BC600D3FA2C /* Extensions.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		D6D689EE1A71DD0D00BB8062 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D6970EC71A5B8DA900F54865 /* HelpScreen.xib */,
+				D6970E981A5B636700F54865 /* LaunchScreen.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D6E2EF111A748C7C008B9F9D /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				D6E2EF0B1A745DBE008B9F9D /* Round.swift */,
+				D6970E911A5B636700F54865 /* GameViewController.swift */,
+				D6B245521A70A43B00775C04 /* Game.swift */,
+				D6D689E81A71D72200BB8062 /* GameView.swift */,
+				D6B245501A70A3E100775C04 /* GameManager.swift */,
+				D6E2EF191A757D8D008B9F9D /* ProgressView.swift */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		D6E2EF121A748C91008B9F9D /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				D6970EC31A5B815700F54865 /* PlayViewController.swift */,
+			);
+			name = Play;
+			sourceTree = "<group>";
+		};
+		D6E2EF131A748C96008B9F9D /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				D6E2EF0F1A7489EC008B9F9D /* ScoreView.swift */,
+				D6E2EF0D1A7489A8008B9F9D /* ScoreViewController.swift */,
+				D6B245541A70A53C00775C04 /* ScoreLabel.swift */,
+				D6B2454E1A70A30900775C04 /* ScoreManager.swift */,
+			);
+			name = Score;
+			sourceTree = "<group>";
+		};
+		D6E2EF141A748CE1008B9F9D /* Smashers */ = {
+			isa = PBXGroup;
+			children = (
+				D6D689F11A71E55D00BB8062 /* SmashersViewController.swift */,
+				D6970E8F1A5B636700F54865 /* SmashersScene.swift */,
+				D6D689EF1A71E0B200BB8062 /* SmashersView.swift */,
+				D6734DBA1A73F31C00D3FA2C /* SmashersGrid.swift */,
+			);
+			name = Smashers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +313,7 @@
 				TargetAttributes = {
 					D6970E851A5B636600F54865 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = E5A8HMCNR8;
 					};
 					D6970E9E1A5B636700F54865 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -198,10 +345,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6734E5E1A7445D000D3FA2C /* turtle-head.png in Resources */,
+				D6226F101A79D25A00F72961 /* turtle-head-smashed.png in Resources */,
+				D6226F131A79D61000F72961 /* turtle-head-concerned.png in Resources */,
+				D6B2454D1A70A08200775C04 /* turtle-smash-logo.tiff in Resources */,
+				D6970EC01A5B7BB000F54865 /* button-bg.tiff in Resources */,
 				D6970E9A1A5B636700F54865 /* LaunchScreen.xib in Resources */,
+				D6226F141A79D61000F72961 /* turtle-head-happy.png in Resources */,
 				D6970E971A5B636700F54865 /* Images.xcassets in Resources */,
-				D6970E8E1A5B636700F54865 /* GameScene.sks in Resources */,
+				D6970EBA1A5B756200F54865 /* HVD_Poster_Clean.ttf in Resources */,
+				D6970EC21A5B7C8E00F54865 /* turtle.tiff in Resources */,
 				D6970E951A5B636700F54865 /* Main.storyboard in Resources */,
+				D6970EC81A5B8DA900F54865 /* HelpScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +374,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6970E901A5B636700F54865 /* GameScene.swift in Sources */,
+				D6734E671A7450FF00D3FA2C /* SmasherInnerCircle.swift in Sources */,
+				D6970EC61A5B87F600F54865 /* Utility.swift in Sources */,
+				D6734E691A74510E00D3FA2C /* SmasherTurtleHead.swift in Sources */,
+				D6B245531A70A43B00775C04 /* Game.swift in Sources */,
+				D6970EC41A5B815700F54865 /* PlayViewController.swift in Sources */,
+				D6B245551A70A53C00775C04 /* ScoreLabel.swift in Sources */,
+				D6B245571A70A5DE00775C04 /* Config.swift in Sources */,
+				D6BAA4251A6F451B0002BC21 /* SettingsManager.swift in Sources */,
+				D6970E901A5B636700F54865 /* SmashersScene.swift in Sources */,
 				D6970E921A5B636700F54865 /* GameViewController.swift in Sources */,
+				D6E2EF0E1A7489A8008B9F9D /* ScoreViewController.swift in Sources */,
+				D6B245511A70A3E100775C04 /* GameManager.swift in Sources */,
+				D6E2EF1A1A757D8D008B9F9D /* ProgressView.swift in Sources */,
+				D6734DBB1A73F31C00D3FA2C /* SmashersGrid.swift in Sources */,
 				D6970E8C1A5B636600F54865 /* AppDelegate.swift in Sources */,
+				D6734E631A7450EE00D3FA2C /* SmasherOuterCircle.swift in Sources */,
+				D6E2EF0C1A745DBF008B9F9D /* Round.swift in Sources */,
+				D6734E651A7450F500D3FA2C /* SmasherProtocol.swift in Sources */,
+				D6E2EF101A7489EC008B9F9D /* ScoreView.swift in Sources */,
+				D6D689F21A71E55D00BB8062 /* SmashersViewController.swift in Sources */,
+				D6734DB91A71ECD300D3FA2C /* Smasher.swift in Sources */,
+				D6D689E91A71D72200BB8062 /* GameView.swift in Sources */,
+				D6734E601A744BC600D3FA2C /* Extensions.swift in Sources */,
+				D6D689F01A71E0B200BB8062 /* SmashersView.swift in Sources */,
+				D6B2454F1A70A30900775C04 /* ScoreManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,9 +521,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "Turtle Smash/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -354,9 +541,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "Turtle Smash/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -413,6 +610,7 @@
 				D6970EAB1A5B636700F54865 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6970EAC1A5B636700F54865 /* Build configuration list for PBXNativeTarget "Turtle SmashTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +619,7 @@
 				D6970EAE1A5B636700F54865 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
