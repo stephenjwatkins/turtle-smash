@@ -2,7 +2,7 @@
 
 Smash the turtles before time expires!
 
-This is an iOS game that I created as a programming exericse in Swift. All code and artwork is original, but developers are free to view and modify the code.
+This is an iOS game created as a programming exericse in Swift. All code and artwork is original, but developers are free to view and modify the code.
 
 If you're using an iPhone, you can download the game for free on the App Store: https://itunes.apple.com/us/app/turtle-smash/id963509680
 
